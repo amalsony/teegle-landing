@@ -3,6 +3,11 @@ import { useState, useEffect } from "react";
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } =
     typeof window !== "undefined" ? window : { innerWidth: 0, innerHeight: 0 };
+
+  // fix hyrdation error
+  if (width === 0 && height === 0) {
+    return { width: 0, height: 0 };
+  }
   return {
     width,
     height,

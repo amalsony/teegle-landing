@@ -1,6 +1,7 @@
 import classes from "./DecksSection.module.css";
 import { useState } from "react";
 import useWindowDimensions from "../hooks/useWindowDimenions";
+import Image from "next/image";
 
 export default function DecksSection() {
   const [toggleValue, setToggleValue] = useState("for learners");
@@ -88,11 +89,11 @@ export default function DecksSection() {
         </div>
         {toggleValue === "for learners" ? (
           <div className={classes.image_container}>
-            <Image src="/decks.png" alt="" className={classes.decks} />
+            <img src="/decks.png" alt="" className={classes.decks} />
           </div>
         ) : (
           <div className={classes.creator_container}>
-            <Image
+            <img
               src="/single deck.png"
               alt=""
               className={classes.creator_deck}

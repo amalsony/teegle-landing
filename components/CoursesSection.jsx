@@ -1,6 +1,7 @@
 import classes from "./CoursesSection.module.css";
 import WaitlistButton from "./WaitlistButton";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function CoursesSection() {
   const [toggleValue, setToggleValue] = useState("for learners");
@@ -18,7 +19,7 @@ export default function CoursesSection() {
             one monthly subscription. Never pay for a course and regret it ever
             again.
           </p>
-          <Image className={classes.image} src="/course video.png" alt="" />
+          <img className={classes.image} src="/course video.png" alt="" />
         </div>
         <div className={classes.section}>
           <p className={classes.para}>
@@ -28,22 +29,14 @@ export default function CoursesSection() {
               something only Teegle does, helping you remember what you watched.{" "}
             </span>
           </p>
-          <Image className={classes.image} src="/decks in courses.png" alt="" />
+          <img className={classes.image} src="/decks in courses.png" alt="" />
         </div>
         <h2 className={classes.pricing}> Try free for 7 days, then $29/mo. </h2>
         <div className={classes.image_container}>
-          <Image className={classes.course_image} src="/sketching.png" alt="" />
-          <Image
-            className={classes.course_image}
-            src="/us history.png"
-            alt=""
-          />
-          <Image
-            className={classes.course_image}
-            src="/gravitation.png"
-            alt=""
-          />
-          <Image className={classes.course_image} src="/calculus.png" alt="" />
+          <img className={classes.course_image} src="/sketching.png" alt="" />
+          <img className={classes.course_image} src="/us history.png" alt="" />
+          <img className={classes.course_image} src="/gravitation.png" alt="" />
+          <img className={classes.course_image} src="/calculus.png" alt="" />
         </div>
         <p className={classes.ending_para}>
           Unlimited knowledge for less than the price of a cup of coffee a day.

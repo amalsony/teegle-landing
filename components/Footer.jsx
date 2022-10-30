@@ -1,4 +1,5 @@
 import classes from "./Footer.module.css";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className={classes.content_container}>
         <div className={classes.main_section}>
           <div className={classes.logo_container}>
-            <Image src="/logo.png" alt="logo" className={classes.logo} />
+            <img src="/logo.png" alt="logo" className={classes.logo} />
           </div>
           <h2 className={classes.title}>Teegle</h2>
         </div>
