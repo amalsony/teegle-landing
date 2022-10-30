@@ -6,11 +6,11 @@ import { useState, useEffect } from "react";
 export default function CommunitiesSection() {
   const { width } = useWindowDimensions();
 
-  const [communityStep, setCommunityStep] = useState(0);
+  const [communityStep, setCommunityStep] = useState(1);
   useEffect(() => {
     const interval = setInterval(() => {
       setCommunityStep((prev) => (prev + 1) % 3);
-    }, 2500);
+    }, 3600);
     return () => clearInterval(interval);
   }, []);
 
@@ -20,10 +20,10 @@ export default function CommunitiesSection() {
       style={{
         backgroundColor:
           communityStep === 1
-            ? "#274de6"
+            ? "#49a1f9"
             : communityStep === 2
-            ? "#ED7928" // eb4034 0000FF
-            : "#8C1515",
+            ? "#ED7928"
+            : "#E55555",
       }}
     >
       {width > 1000 ? (
