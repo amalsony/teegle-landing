@@ -17,6 +17,7 @@
 .logo_container {
   display: flex;
   align-items: center;
+  pointer-events: auto;
 }
 
 @media (max-width: 768px) {
