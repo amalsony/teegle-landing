@@ -52,7 +52,7 @@ export default function Footer() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://twitter.com/TeegleLearn"
+              href="https://twitter.com/TeegleApp"
               className={classes.para}
             >
               Twitter

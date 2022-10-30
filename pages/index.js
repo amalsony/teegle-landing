@@ -13,7 +13,7 @@ export default function Home() {
         <title>Teegle | The learning social network</title>
         <meta
           name="description"
-          content=" Teegle brings the three things students do to learn onto one platform. Watch courses, ask questions and practice problems, all in one
+          content="Teegle brings the three things students do to learn onto one platform. Watch courses, ask questions and practice problems, all in one
             place, with Communities, Decks and Courses."
         ></meta>
         <meta
@@ -24,6 +24,17 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
+        <meta name="twitter:card" content="summary_large_image"></meta>
+        <meta
+          name="twitter:title"
+          content="Teegle | The Learning Social Network"
+        ></meta>
+        <meta
+          name="twitter:description"
+          content="Teegle brings the three things students do to learn onto one platform. Watch courses, ask questions and practice problems, all in one
+          place, with Communities, Decks and Courses."
+        ></meta>
+        <meta name="twitter:image" content="/twitter image.png"></meta>
         <link rel="icon" href="/logo.png" />
       </Head>
       <Navbar />
