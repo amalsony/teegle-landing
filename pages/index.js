@@ -34,7 +34,7 @@ export default function Home() {
           content="Teegle brings the three things students do to learn onto one platform. Watch courses, ask questions and practice problems, all in one
           place, with Communities, Decks and Courses."
         ></meta>
-        <meta name="twitter:image" content="/twitter image.png"></meta>
+        <meta name="twitter:image" content="/twitter-image.png"></meta>
         <link rel="icon" href="/logo.png" />
       </Head>
       <Navbar />
