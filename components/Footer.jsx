@@ -15,15 +15,38 @@ export default function Footer() {
           <div className={classes.section}>
             <h3 className={classes.title}>Get in touch</h3>
             <a
-              href="mailto:amalsony5@gmail.com"
+              href="mailto:amal@teegle.app"
               rel="noreferrer"
               target="_blank"
               className={classes.para}
             >
-              amalsony5@gmail.com
+              amal@teegle.app
+            </a>
+            <a
+              href="mailto:nandha@teegle.app"
+              rel="noreferrer"
+              target="_blank"
+              className={classes.para}
+            >
+              nandha@teegle.app
             </a>
           </div>
-
+          {/* <div className={classes.section}>
+            <h3 className={classes.title}>Advertise On Teegle</h3>
+            <p className={classes.para}>
+              {" "}
+              Advertise to the most engaged audience on the internet. Gen Z.
+              Email us at{" "}
+              <a
+                href="mailto:amal@teegle.app"
+                rel="noreferrer"
+                target="_blank"
+                className={classes.para_bold}
+              >
+                advertise@teegle.app
+              </a>
+            </p>
+          </div> */}
           <div className={classes.section}>
             <h3 className={classes.title}>Follow Us</h3>
             <a
@@ -33,6 +56,14 @@ export default function Footer() {
               className={classes.para}
             >
               Twitter
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://instagram.com/TeegleApp"
+              className={classes.para}
+            >
+              Instagram
             </a>
           </div>
         </div>
