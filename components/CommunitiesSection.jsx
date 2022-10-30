@@ -1,5 +1,6 @@
 import classes from "./CommunitiesSection.module.css";
 import useWindowDimensions from "../hooks/useWindowDimenions";
+import Image from "next/image";
 
 export default function CommunitiesSection() {
   const { width } = useWindowDimensions();
@@ -9,8 +10,8 @@ export default function CommunitiesSection() {
       {width > 1000 ? (
         <div className={classes.content_container}>
           <div className={classes.image_container}>
-            <img src="/SAT Math Post.png" className={classes.image} />
-            <img src="/SAT Math Reply.png" className={classes.image} />
+            <Image src="/SAT Math Post.png" className={classes.image} />
+            <Image src="/SAT Math Reply.png" className={classes.image} />
           </div>
           <div className={classes.text}>
             <h1 className={classes.title}>
@@ -46,7 +47,7 @@ export default function CommunitiesSection() {
             <div className={classes.fade}>Can’t solve a problem?</div> Teegle
             it.
           </h1>
-          <img src="/SAT Math Post.png" className={classes.image} />
+          <Image src="/SAT Math Post.png" className={classes.image} />
           <p className={classes.description}>
             On Teegle, you ask your questions in{" "}
             <span className={classes.bold}> Communities.</span> This means that
@@ -58,7 +59,7 @@ export default function CommunitiesSection() {
             Communities are filled by people passionate about its subject. Your
             posts are discovered by people who want to browse through it.
           </p>
-          <img src="/SAT Math Reply.png" className={classes.image} />
+          <Image src="/SAT Math Reply.png" className={classes.image} />
           <p className={classes.description}>
             <span className={classes.bold}>
               The discoverability of Reddit, but more personal, with the

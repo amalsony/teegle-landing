@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className={classes.container}>
       <div className={classes.nav}>
         <div className={classes.logo_container}>
-          <img src="/logo.png" alt="logo" className={classes.logo} />
+          <Image src="/logo.png" alt="logo" className={classes.logo} />
         </div>
         <div className={classes.logo_container}>
           <WaitlistButton />

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className={classes.content_container}>
         <div className={classes.main_section}>
           <div className={classes.logo_container}>
-            <img src="/logo.png" alt="logo" className={classes.logo} />
+            <Image src="/logo.png" alt="logo" className={classes.logo} />
           </div>
           <h2 className={classes.title}>Teegle</h2>
         </div>
@@ -15,7 +15,8 @@ export default function Footer() {
             <h3 className={classes.title}>Get in touch</h3>
             <a
               href="mailto:amalsony5@gmail.com"
-              target={"_blank"}
+              rel="noreferrer"
+              target="_blank"
               className={classes.para}
             >
               amalsony5@gmail.com
@@ -25,8 +26,9 @@ export default function Footer() {
           <div className={classes.section}>
             <h3 className={classes.title}>Follow Us</h3>
             <a
-              target={"_blank"}
-              href={"https://twitter.com/TeegleLearn"}
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/TeegleLearn"
               className={classes.para}
             >
               Twitter
