@@ -1,17 +1,54 @@
 import classes from "./CommunitiesSection.module.css";
 import useWindowDimensions from "../hooks/useWindowDimenions";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function CommunitiesSection() {
   const { width } = useWindowDimensions();
 
+  const [communityStep, setCommunityStep] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCommunityStep((prev) => (prev + 1) % 3);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className={classes.container}>
+    <section
+      className={classes.container}
+      style={{
+        backgroundColor:
+          communityStep === 1
+            ? "#274de6"
+            : communityStep === 2
+            ? "#ED7928" // eb4034 0000FF
+            : "#8C1515",
+      }}
+    >
       {width > 1000 ? (
         <div className={classes.content_container}>
           <div className={classes.image_container}>
-            <img src="/SAT Math Post.png" className={classes.image} />
-            <img src="/SAT Math Reply.png" className={classes.image} />
+            <img
+              src={
+                communityStep === 1
+                  ? "SAT Math Post.png"
+                  : communityStep === 2
+                  ? "2D Art Post.png"
+                  : "Stanford CS Club Post.png"
+              }
+              className={classes.image}
+            />
+            <img
+              src={
+                communityStep === 1
+                  ? "SAT Math Reply.png"
+                  : communityStep === 2
+                  ? "2D Art Reply.png"
+                  : "Stanford CS Club Reply.png"
+              }
+              className={classes.image}
+            />
           </div>
           <div className={classes.text}>
             <h1 className={classes.title}>
@@ -49,7 +86,13 @@ export default function CommunitiesSection() {
           </h1>
           <img
             draggable="false"
-            src="/SAT Math Post.png"
+            src={
+              communityStep === 1
+                ? "SAT Math Post.png"
+                : communityStep === 2
+                ? "2D Art Post.png"
+                : "Stanford CS Club Post.png"
+            }
             className={classes.image}
           />
           <p className={classes.description}>
@@ -65,7 +108,13 @@ export default function CommunitiesSection() {
           </p>
           <img
             draggable="false"
-            src="/SAT Math Reply.png"
+            src={
+              communityStep === 1
+                ? "SAT Math Reply.png"
+                : communityStep === 2
+                ? "2D Art Reply.png"
+                : "Stanford CS Club Reply.png"
+            }
             className={classes.image}
           />
           <p className={classes.description}>
