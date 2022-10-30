@@ -1,0 +1,30 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 36px;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.logo {
+  max-height: 42px;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 1rem;
+  }
+
+  .logo {
+    max-height: 36px;
+  }
+}
