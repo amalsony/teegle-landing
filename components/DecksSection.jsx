@@ -89,11 +89,17 @@ export default function DecksSection() {
         </div>
         {toggleValue === "for learners" ? (
           <div className={classes.image_container}>
-            <img src="/decks.png" alt="" className={classes.decks} />
+            <img
+              draggable="false"
+              src="/decks.png"
+              alt=""
+              className={classes.decks}
+            />
           </div>
         ) : (
           <div className={classes.creator_container}>
             <img
+              draggable="false"
               src="/single deck.png"
               alt=""
               className={classes.creator_deck}
