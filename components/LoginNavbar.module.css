@@ -20,6 +20,10 @@
   pointer-events: auto;
 }
 
+.sign_up_button {
+  margin-left: 1rem;
+}
+
 @media (max-width: 768px) {
   .nav {
     padding: 1rem;

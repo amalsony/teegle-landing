@@ -35,7 +35,7 @@ export default function Home() {
           name="twitter:image"
           content="https://www.teegle.app/twitter-image.png"
         />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/logo_small.png" />
       </Head>
       <Navbar />
       <IntroductionSection />

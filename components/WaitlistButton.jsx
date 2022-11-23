@@ -7,9 +7,9 @@ export default function WaitlistButton({ type }) {
       className={type === "gold" ? classes.gold : classes.button}
       target="_blank"
       rel="noreferrer"
-      href="https://oay0uma7h4g.typeform.com/to/Wubk9wwD"
+      href="https://teegle.app"
     >
-      <span className={classes.text}>Join the waitlist</span>
+      <span className={classes.text}>Go to Teegle</span>
     </a>
   );
 }
