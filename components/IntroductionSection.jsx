@@ -1,5 +1,4 @@
 import classes from "./IntroductionSection.module.css";
-import LoginButton from "../layout/navigation/LoginButton";
 
 export default function IntroductionSection() {
   return (

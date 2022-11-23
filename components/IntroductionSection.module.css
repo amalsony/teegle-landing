@@ -78,14 +78,6 @@
   color: rgb(219, 149, 26);
 }
 
-.sign_up_button_container {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
 @media (max-width: 768px) {
   .container {
     padding: 0;
