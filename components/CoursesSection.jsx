@@ -51,7 +51,7 @@ export default function CoursesSection() {
             alt=""
           />
         </div>
-        <h2 className={classes.pricing}> Try free for 7 days, then $29/mo. </h2>
+        {/* <h2 className={classes.pricing}> Try free for 7 days, then $29/mo. </h2> */}
         <div className={classes.image_container}>
           <img
             draggable="false"
